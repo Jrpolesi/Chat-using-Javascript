@@ -1,5 +1,5 @@
 const room = window.location.pathname.replace(/\//g, "")
-const socket = io("http://192.168.1.111:3000/" + room)
+const socket = io("http://localhost:3000/" + room)
 
 socket.on("status", (data) => {
     console.log(data)
