@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+body {
+    padding: 10px;
+    width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#activeUsers{
+    color: rgb(6, 129, 6);
+    font-size: 19px;
+}
+
+#messages {
+    padding: 3px 10px 8px 10px;
+    height: calc(100vh - 350px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#messages>div>h4{
+    padding: 0%;
+    margin: 0%;
+    margin-top: 8px;
+    color: rgb(184, 123, 9);
+}
+#messages>div>p{
+    padding: 0%;
+    margin: 0%;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    text-indent: 10px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin-top: 8px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(56, 116, 206);
+    border: 3px solid rgb(56, 116, 206);
+    border-radius: 5px;
+    transition: .15s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(56, 116, 206);
+    color: white;
+    border: 3px solid rgb(56, 116, 206);
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 320px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    #messages {
+        height: calc(100vh - 400px);
+    }
+}

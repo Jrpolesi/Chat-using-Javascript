@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleRoom.css">
+    <title>Chat</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Chat online</h1>
+        <div id="activeUsers">Ativos: </div>
+    </div>
+    <div id="messages"></div>
+    <form name="message_form" action="">
+        <textarea name="textarea" id="textarea" rows="10" placeholder="Sua mensagem..."></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/Chat.js"></script>
+</body>
+
+</html>
